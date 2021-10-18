@@ -9,7 +9,7 @@
                                   :node->descriptor (fn [n] (when-not (keyword? n) n))}
                                  config)))
 
-(fn graph [system filename & [config]]
+(defn graph [system filename & [config]]
   (let [nodes (keys system)
         edges (reduce (fn [coll [node component]]
                         (let [deps (->> (meta component)
@@ -18,5 +18,5 @@
                           (apply conj coll (for [dep deps] [node dep]))))
                       [] system)]
 
-    (copy (dot->image (tangle nodes edges config) "png") (file "examples/hello.png"))))
+    (copy (dot->image (tangle nodes edges config) "png") (file filename))))
 
