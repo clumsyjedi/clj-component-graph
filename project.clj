@@ -5,4 +5,6 @@
             :url "https://www.eclipse.org/legal/epl-2.0/"}
   :dependencies [[org.clojure/clojure "1.10.1"]
                  [macroz/tangle "0.2.2"]]
-  :repl-options {:init-ns component-graph.core})
+  :repl-options {:init-ns component-graph.core}
+  :deploy-repositories [["releases" :clojars]
+                        ["snapshots" :clojars]])
