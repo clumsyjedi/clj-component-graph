@@ -1,4 +1,4 @@
-(defproject clumsyjedi/clj-component-graph "0.1.1-SNAPSHOT"
+(defproject org.clojars.clumsyjedi/clj-component-graph "0.1.1-SNAPSHOT"
   :description "renders directed graphs from a stuartsierra style component system"
   :url "https://github.com/clumsyjedi/clj-component-graph"
   :license {:name "EPL-2.0 OR GPL-2.0-or-later WITH Classpath-exception-2.0"
