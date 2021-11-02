@@ -1,14 +1,23 @@
 # clj-component-graph
 
-A Clojure library designed to ... well, that part is up to you.
+Generate graphviz dependency diagrams from com.stuartsierra.component system objects.
+
+This library is very simple, but has proved enormously useful to me the short term, so may be useful to others. It will generate an image file on disk, based on an input object that satisfies? com.stuartsierra.component/Lifecycle
 
 ## Usage
 
-FIXME
+```
+(require 'component-graph.core)
+(component-graph.core/graph reloaded.repl/system
+                            "graph.png"
+                            {:blacklist [:nrepl]})
+```
+
+Dig around in the source for some other supported options that can be passed.
 
 ## License
 
-Copyright © 2021 FIXME
+Copyright © 2021
 
 This program and the accompanying materials are made available under the
 terms of the Eclipse Public License 2.0 which is available at
