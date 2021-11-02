@@ -4,6 +4,10 @@ Generate graphviz dependency diagrams from com.stuartsierra.component system obj
 
 This library is very simple, but has proved enormously useful to me the short term, so may be useful to others. It will generate an image file on disk, based on an input object that satisfies? com.stuartsierra.component/Lifecycle
 
+## Installation
+
+[org.clojars.clumsyjedi/clj-component-graph "0.1.3"]
+
 ## Usage
 
 ```
